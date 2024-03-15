@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Thomas\RentalCompatible\Api\RentalQuoteRepositoryInterface" type="Thomas\RentalCompatible\Model\RentalQuoteRepository"/>
+	<preference for="Thomas\RentalCompatible\Api\Data\RentalItemInterface" type="Thomas\RentalCompatible\Model\RentalItem"/>
+    <preference for="Thomas\RentalCompatible\Api\Data\RentalOptionInterface" type="Thomas\RentalCompatible\Model\RentalOption"/>
+    <preference for="Thomas\RentalCompatible\Api\Data\RentalOptionValueInterface" type="Thomas\RentalCompatible\Model\RentalOptionValue"/>
+	<preference for="Thomas\RentalCompatible\Api\Data\RentalQuoteInterface" type="Magento\Framework\Api\SearchResults"/>
+    <preference for="Thomas\RentalCompatible\Api\Data\RentalOptionsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>

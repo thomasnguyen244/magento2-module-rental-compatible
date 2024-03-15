@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+	<system>
+		<section id="thomasrentalsystem" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Rental System Create Order</label>
+            <tab>magenest</tab>
+            <resource>Thomas_RentalCompatible::RentalSystem</resource>
+			<group id="create_order" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Create Order Settings</label>
+				<field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="default_payment" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Default Payment Method</label>
+                    <source_model>Thomas\RentalCompatible\Model\Config\Source\PaymentOptions</source_model>
+					<comment>Input default payment method code will apply when create order. Example: checkmo</comment>
+				</field>
+                <field id="default_shipping" translate="label comment" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Default Shipping Method</label>
+                    <source_model>Thomas\RentalCompatible\Model\Config\Source\ShippingOptions</source_model>
+					<comment>Input default shipping method code will apply when create order. Example: flatrate_flatrate</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

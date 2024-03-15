@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/thomas-rentalsystem/createOrder" method="POST">
+		<service class="Thomas\RentalCompatible\Api\RentalQuoteRepositoryInterface" method="createRentalOrder"/>
+		<resources>
+			<resource ref="Thomas_RentalCompatible::rental_create_order"/>
+		</resources>
+	</route>
+
+    <route url="/V1/thomas-rentalsystem/getOptions" method="GET">
+		<service class="Thomas\RentalCompatible\Api\RentalQuoteRepositoryInterface" method="getRentalOptions"/>
+		<resources>
+            <resource ref="anonymous"/>
+        </resources>
+	</route>
+</routes>

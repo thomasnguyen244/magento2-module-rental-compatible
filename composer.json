@@ -1,0 +1,27 @@
+{
+    "name": "workwiththomas/module-rental-compatible",
+    "description": "Compatible magenest rental module. Support REST API to create Rental Order.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Thomas Nguyen",
+            "email": "thomasnguyen899321@gmail.com",
+            "role": "Magento 2 Rental System Compatible and REST API",
+            "homepage": "https://workwiththomas.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magenest/module-rental-system": ">=1.4.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Thomas\\RentalCompatible\\": ""
+        }
+    }
+}

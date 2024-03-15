@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Thomas_RentalCompatible::RentalSystem" title="Thomas: Rental System" sortOrder="10">
+					<resource id="Thomas_RentalCompatible::rental_create_order" title="Create Rental Order" sortOrder="10"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>
